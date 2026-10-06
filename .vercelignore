@@ -1,0 +1,9 @@
+# Ignore Python backend files so Vercel serves pure static web/ dashboard
+app.py
+streamlit_app.py
+src/
+data/
+archive/
+audit/
+requirements.txt
+*.py
