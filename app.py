@@ -1,7 +1,7 @@
 import os
 import re
+import base64
 import streamlit as st
-import streamlit.components.v1 as components
 
 # Configure Streamlit Page
 st.set_page_config(
@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Hide Streamlit header & footer for full-width layout
+# Custom CSS overrides for full viewport layout
 st.markdown("""
     <style>
         #MainMenu {visibility: hidden;}
@@ -23,6 +23,11 @@ st.markdown("""
             padding-left: 0rem !important;
             padding-right: 0rem !important;
             max-width: 100% !important;
+        }
+        iframe.dashboard-iframe {
+            border: none;
+            width: 100% !important;
+            min-height: 2500px !important;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -72,6 +77,10 @@ def load_standalone_html():
     return html_content
 
 standalone_html = load_standalone_html()
+b64_html = base64.b64encode(standalone_html.encode('utf-8')).decode('utf-8')
 
-# Render via standard st.components.v1.html with height=2500
-components.html(standalone_html, height=2500, scrolling=True)
+# Render as native base64 data URI iframe directly in st.markdown
+st.markdown(
+    f'<iframe class="dashboard-iframe" src="data:text/html;charset=utf-8;base64,{b64_html}"></iframe>',
+    unsafe_allow_html=True
+)
