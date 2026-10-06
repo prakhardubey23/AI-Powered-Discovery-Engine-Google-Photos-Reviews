@@ -51,25 +51,24 @@ def load_standalone_html():
     with open(app_path, "r", encoding="utf-8") as f:
         app_content = f.read()
 
-    # Inline CSS & JS into standalone HTML
-    # Replace stylesheet link
-    html_content = html_content.replace(
-        '<link rel="stylesheet" href="index.css?v=18">',
-        f'<style>\n{css_content}\n</style>'
-    )
-    
-    # Replace data.js script tag
+    # Inline CSS & JS into standalone HTML using lambda replacements to avoid escape sequence errors
     import re
+
     html_content = re.sub(
-        r'<script src="data\.js\?v=\d+"></script>',
-        f'<script>\n{data_content}\n</script>',
+        r'<link rel="stylesheet" href="index\.css[^"]*">',
+        lambda m: f'<style>\n{css_content}\n</style>',
         html_content
     )
-    
-    # Replace app.js script tag
+
     html_content = re.sub(
-        r'<script src="app\.js\?v=\d+"></script>',
-        f'<script>\n{app_content}\n</script>',
+        r'<script src="data\.js[^"]*"></script>',
+        lambda m: f'<script>\n{data_content}\n</script>',
+        html_content
+    )
+
+    html_content = re.sub(
+        r'<script src="app\.js[^"]*"></script>',
+        lambda m: f'<script>\n{app_content}\n</script>',
         html_content
     )
 
