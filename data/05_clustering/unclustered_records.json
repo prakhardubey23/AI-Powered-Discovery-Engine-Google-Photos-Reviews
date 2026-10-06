@@ -1,0 +1,163 @@
+[
+  {
+    "record_id": "bb36732e-4114-5e31-ba34-015d9443d8e9",
+    "source": "app_store",
+    "original_text": "Mahesh valechha: Best photo app bring all you old memories which never even thought of you before",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "ed96a317-94d5-5195-8c5f-a66d947ff6b7",
+    "source": "app_store",
+    "original_text": "Google Photos: Backup & Edit: Easy to review and retrieve. Great for organizing and storing photos.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "d91b688b-0f22-5c54-9f42-22979ccddddc",
+    "source": "google_play",
+    "original_text": "Photos go missing (hundreds of photos, randomly!). Support says this happens and there is nothing they can do, sometimes data loss happens. And they will not refund me!",
+    "failure_stage": "2. System Retrieval Failure",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "6b43a745-6176-531b-b7b4-308274ff930c",
+    "source": "google_play",
+    "original_text": "Meh. Adequate, at best. Easier to do things with your photos via website - and even then, it ain't great. Tools are not consistently available for all images. App is best for image storage and retrieval. Don't try to do anything fancy, or beyond basic. And ordering prints?! LOL. Your options for cropping, adjusting anything are WOEFULLY limited. Disappointing.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "5a7cdcb6-5e80-5b98-8548-3a6d1c9af034",
+    "source": "app_store",
+    "original_text": "Fantastic & Powerful: Easy & fun, with special features like location detection on every photo.\nI have been using this on my iPhone for over two years and I Love it.\nTalk about photo storage...\nIt is easy to use and brainlessly painless. Using my gmail account and a simply sine-in and boom, that's all it takes for me.\n\nNickname:\n Andyroofs  ~|\u2022|~",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "f1172e81-c800-5cab-a606-e7514bdbf228",
+    "source": "app_store",
+    "original_text": "Well organized: I love how Google Photos groups my pictures from an event so I can save them in an album. Apple photos are very disappointing",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "96ffad87-3f97-5172-bc6d-e4fbdd822c8a",
+    "source": "app_store",
+    "original_text": "Request for developers: Please can you create a way of seeing which photos are NOT saved in any album?\n\nIt seems the only way to feedback this suggestion easily is as a review.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "09e5017a-3547-54cb-8173-a4045947164c",
+    "source": "app_store",
+    "original_text": "Good site: Love the way I can keep all my valued photos all in one place . \nEasy to retrieve,  and bring back some smiles",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "eb04a59c-0fe3-5d2c-8552-5afdc93adcd6",
+    "source": "app_store",
+    "original_text": "Listen, All Love But..: I\u2019m wondering if you could have a special category to see which photos aren\u2019t in albums. It would make life so much easier for me because I have two phones that save to my one account.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "01644dcf-7780-5756-aa66-9c7c23a79718",
+    "source": "app_store",
+    "original_text": "Awesome App: Retrieve photos and bring back good memories that are enjoyable",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "16d353f1-54d9-5829-8e64-ef5bc2ed3df7",
+    "source": "app_store",
+    "original_text": "Thank you, Google. This is amazing.: Thank you Google this program is amazing. I\u2019m very happy because I found some pictures I was missing.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "7a5a3ba6-3cdb-5ffd-ad19-c170e756d9c5",
+    "source": "app_store",
+    "original_text": "Cannot use most functions: Cannot see my albums, keeps automatically backing up my images without my consent. Very difficult to delete them after. Never used to have a problem many updates ago. Newer updates have made the app unusable.",
+    "failure_stage": "2. System Retrieval Failure",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "ffba89e5-f62e-5cac-bbc0-5e7a6de05091",
+    "source": "app_store",
+    "original_text": "Probl\u00e8me avec albums partag\u00e9s: Le menu pour afficher les albums partag\u00e9s avec la commande ajout\u00e9e \u00e0 un album n\u2019appara\u00eet plus dans la version 7.3 iOS 18.0.1",
+    "failure_stage": "2. System Retrieval Failure",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "af570efb-347b-531d-9639-e232fe31c332",
+    "source": "app_store",
+    "original_text": "Terrible when trying to sort: Filtering based on whether a photo is in a album is truly terrible. No idea why Apple and Google refuse to offer REAL controls and filtering based on albums. Google support is a joke.\n\nDisabled the backup option due to running low on space AND THIS GARBAGE APP KEEPS UPLOADING MY PHOTOS. Do nott trust Google anymore\u2026absolute scam of a company.",
+    "failure_stage": "2. System Retrieval Failure",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "183d03fa-8198-5081-aa5f-7da0101153bc",
+    "source": "app_store",
+    "original_text": "Happy: Magnificent utility, really enjoying the Recognition logic .",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "ec38914a-9260-52f2-b5f1-d79d07134470",
+    "source": "app_store",
+    "original_text": "Google picture assistant: Awesome app.... it found photos I forgot I had!! Love it \ud83d\ude0d 11 out of 10 \ud83d\ude01",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "57637f96-ae54-5f2b-b0d3-b282cff91927",
+    "source": "app_store",
+    "original_text": "Great App: Great app for storing and retrieving photos.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "1015ed98-5e2b-556c-bf60-775da6fb4516",
+    "source": "app_store",
+    "original_text": "Awesome app: This app is wonderful and I found all my pics I had deleted so well done Google. I love it.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "47515b72-cfd0-5217-835c-fa4ed9a1068a",
+    "source": "app_store",
+    "original_text": "Absolute rubbish: Downloaded and saved over 200 photos into two albums.  They just disappeared. Twice.  This app is crapp",
+    "failure_stage": "2. System Retrieval Failure",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "f282b7a5-3f37-57b0-8110-a3a26564709b",
+    "source": "app_store",
+    "original_text": "Love this App.: Very useful. Able to retrieve all my photos. Hope that Google can increase the FREE storage for users.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "6bfad1ff-f026-57aa-90fe-5554dcb16900",
+    "source": "app_store",
+    "original_text": "Good application: It\u2019s very easy to get all the information about the place and photo taken \ud83d\udc4c\ud83c\udffd",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "7392c704-2842-5759-aebc-e03d81cc26d0",
+    "source": "app_store",
+    "original_text": "10/10: Great App, it really keeps photos and location.",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  },
+  {
+    "record_id": "dc0a1393-8b94-5725-8d0e-79194ba44eda",
+    "source": "app_store",
+    "original_text": "Ben Engelbrecht: Easy to use. Thanks! Retrieving good memories!",
+    "failure_stage": "Not Indicative",
+    "reasoning": "Outlier or non-indicative retrieval mention without distinct shared cluster signature (preserved to prevent force-fitting)."
+  }
+]

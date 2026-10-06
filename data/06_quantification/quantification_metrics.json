@@ -1,0 +1,359 @@
+{
+  "dataset_kpis": {
+    "total_sources_scanned": 6,
+    "sources_breakdown": [
+      {
+        "source_name": "app_store",
+        "count": 5787,
+        "percentage_of_raw": 78.65
+      },
+      {
+        "source_name": "google_play",
+        "count": 1553,
+        "percentage_of_raw": 21.11
+      },
+      {
+        "source_name": "google_help_community",
+        "count": 10,
+        "percentage_of_raw": 0.14
+      },
+      {
+        "source_name": "youtube",
+        "count": 4,
+        "percentage_of_raw": 0.05
+      },
+      {
+        "source_name": "forums",
+        "count": 2,
+        "percentage_of_raw": 0.03
+      },
+      {
+        "source_name": "social",
+        "count": 2,
+        "percentage_of_raw": 0.03
+      }
+    ],
+    "total_raw_conversations": 7358,
+    "total_duplicates_spam_removed": 191,
+    "total_normalized_conversations": 7167,
+    "total_relevant_conversations": 510,
+    "total_irrelevant_conversations": 6657,
+    "relevance_rate_percentage": 7.12,
+    "synthetic_records_count": 0,
+    "authentic_records_percentage": 100.0
+  },
+  "search_retrieval_outcomes": [
+    {
+      "outcome": "Success",
+      "count": 209,
+      "percentage": 40.98,
+      "numerator": 209,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "definition": "User explicitly retrieved/found the intended target photo."
+    },
+    {
+      "outcome": "Partial Success",
+      "count": 30,
+      "percentage": 5.88,
+      "numerator": 30,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "definition": "User found related photos (same event/person) but not the specific intended target photo."
+    },
+    {
+      "outcome": "Failure",
+      "count": 229,
+      "percentage": 44.9,
+      "numerator": 229,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "definition": "User was unable to find the intended photo despite searching or experienced severe search breakdown."
+    },
+    {
+      "outcome": "Unknown",
+      "count": 42,
+      "percentage": 8.24,
+      "numerator": 42,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "definition": "Outcome cannot be conclusively determined from the review text."
+    }
+  ],
+  "failure_stages_funnel": [
+    {
+      "failure_stage": "1. Translation Struggle",
+      "count": 4,
+      "percentage": 0.78,
+      "numerator": 4,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "description": "User struggles to translate internal visual/episodic memory into effective textual search queries."
+    },
+    {
+      "failure_stage": "2. System Retrieval Failure",
+      "count": 202,
+      "percentage": 39.61,
+      "numerator": 202,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "description": "User provides query/clues, but Google Photos fails to retrieve sufficiently relevant results."
+    },
+    {
+      "failure_stage": "3. Result Overload / Distinction",
+      "count": 29,
+      "percentage": 5.69,
+      "numerator": 29,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "description": "Potentially relevant results are returned, but user struggles to identify the intended photo among excessive or similar photos."
+    },
+    {
+      "failure_stage": "4. Refinement Breakdown",
+      "count": 22,
+      "percentage": 4.31,
+      "numerator": 22,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "description": "Initial search fails and user struggles to determine what query or filter to try next (abandonment/circular search)."
+    },
+    {
+      "failure_stage": "Not Indicative",
+      "count": 253,
+      "percentage": 49.61,
+      "numerator": 253,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)",
+      "description": "Conversation is retrieval-relevant but lacks granular breakdown details of a multi-step search journey."
+    }
+  ],
+  "remembered_clues_distribution": [
+    {
+      "dimension": "Time",
+      "conversation_count": 132,
+      "percentage_of_relevant_conversations": 25.88,
+      "numerator": 132,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "People",
+      "conversation_count": 122,
+      "percentage_of_relevant_conversations": 23.92,
+      "numerator": 122,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "Objects",
+      "conversation_count": 115,
+      "percentage_of_relevant_conversations": 22.55,
+      "numerator": 115,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "Location",
+      "conversation_count": 59,
+      "percentage_of_relevant_conversations": 11.57,
+      "numerator": 59,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "Activity",
+      "conversation_count": 55,
+      "percentage_of_relevant_conversations": 10.78,
+      "numerator": 55,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "Context",
+      "conversation_count": 55,
+      "percentage_of_relevant_conversations": 10.78,
+      "numerator": 55,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "Visuals",
+      "conversation_count": 47,
+      "percentage_of_relevant_conversations": 9.22,
+      "numerator": 47,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "Event",
+      "conversation_count": 47,
+      "percentage_of_relevant_conversations": 9.22,
+      "numerator": 47,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "dimension": "Text_ocr",
+      "conversation_count": 29,
+      "percentage_of_relevant_conversations": 5.69,
+      "numerator": 29,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    }
+  ],
+  "tri_state_memory_profiles": [
+    {
+      "dimension": "Time",
+      "explicitly_remembered_count": 141,
+      "explicitly_remembered_pct": 27.65,
+      "explicitly_forgotten_count": 6,
+      "explicitly_forgotten_pct": 1.18,
+      "not_mentioned_count": 363,
+      "not_mentioned_pct": 71.18,
+      "denominator": 510
+    },
+    {
+      "dimension": "Location",
+      "explicitly_remembered_count": 60,
+      "explicitly_remembered_pct": 11.76,
+      "explicitly_forgotten_count": 5,
+      "explicitly_forgotten_pct": 0.98,
+      "not_mentioned_count": 445,
+      "not_mentioned_pct": 87.25,
+      "denominator": 510
+    },
+    {
+      "dimension": "People",
+      "explicitly_remembered_count": 124,
+      "explicitly_remembered_pct": 24.31,
+      "explicitly_forgotten_count": 0,
+      "explicitly_forgotten_pct": 0.0,
+      "not_mentioned_count": 386,
+      "not_mentioned_pct": 75.69,
+      "denominator": 510
+    },
+    {
+      "dimension": "Objects",
+      "explicitly_remembered_count": 117,
+      "explicitly_remembered_pct": 22.94,
+      "explicitly_forgotten_count": 1,
+      "explicitly_forgotten_pct": 0.2,
+      "not_mentioned_count": 392,
+      "not_mentioned_pct": 76.86,
+      "denominator": 510
+    },
+    {
+      "dimension": "Activity",
+      "explicitly_remembered_count": 60,
+      "explicitly_remembered_pct": 11.76,
+      "explicitly_forgotten_count": 0,
+      "explicitly_forgotten_pct": 0.0,
+      "not_mentioned_count": 450,
+      "not_mentioned_pct": 88.24,
+      "denominator": 510
+    },
+    {
+      "dimension": "Event",
+      "explicitly_remembered_count": 56,
+      "explicitly_remembered_pct": 10.98,
+      "explicitly_forgotten_count": 0,
+      "explicitly_forgotten_pct": 0.0,
+      "not_mentioned_count": 454,
+      "not_mentioned_pct": 89.02,
+      "denominator": 510
+    },
+    {
+      "dimension": "Visuals",
+      "explicitly_remembered_count": 69,
+      "explicitly_remembered_pct": 13.53,
+      "explicitly_forgotten_count": 1,
+      "explicitly_forgotten_pct": 0.2,
+      "not_mentioned_count": 440,
+      "not_mentioned_pct": 86.27,
+      "denominator": 510
+    },
+    {
+      "dimension": "Text_ocr",
+      "explicitly_remembered_count": 28,
+      "explicitly_remembered_pct": 5.49,
+      "explicitly_forgotten_count": 0,
+      "explicitly_forgotten_pct": 0.0,
+      "not_mentioned_count": 482,
+      "not_mentioned_pct": 94.51,
+      "denominator": 510
+    }
+  ],
+  "problem_clusters_distribution": [
+    {
+      "cluster_id": "face_grouping_people_identification_breakdown",
+      "cluster_name": "Face Grouping & People Identification Failure",
+      "conversation_count": 130,
+      "percentage": 25.49,
+      "numerator": 130,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "cluster_id": "semantic_ai_natural_language_query_mismatch",
+      "cluster_name": "Natural Language & AI Query Semantic Mismatch",
+      "conversation_count": 121,
+      "percentage": 23.73,
+      "numerator": 121,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "cluster_id": "temporal_chronological_discovery_gap",
+      "cluster_name": "Temporal & Date-Based Navigation Breakdown",
+      "conversation_count": 119,
+      "percentage": 23.33,
+      "numerator": 119,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "cluster_id": "visual_attribute_object_detail_retrieval_friction",
+      "cluster_name": "Visual Attributes & Object-Specific Retrieval Friction",
+      "conversation_count": 55,
+      "percentage": 10.78,
+      "numerator": 55,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "cluster_id": "result_overload_and_refinement_exhaustion",
+      "cluster_name": "Result Overload & Refinement Exhaustion",
+      "conversation_count": 33,
+      "percentage": 6.47,
+      "numerator": 33,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "cluster_id": "text_document_screenshot_ocr_breakdown",
+      "cluster_name": "Text, Document & Screenshot OCR Search Breakdown",
+      "conversation_count": 29,
+      "percentage": 5.69,
+      "numerator": 29,
+      "denominator": 510,
+      "denominator_definition": "Total verified relevant retrieval conversations (510 records)"
+    },
+    {
+      "cluster_id": "unclustered_records",
+      "cluster_name": "Unclustered / Non-Indicative Outliers",
+      "conversation_count": 23,
+      "percentage": 4.51,
+      "numerator": 23,
+      "denominator": 510,
+      "denominator_definition": "Preserved unclustered to prevent force-fitting"
+    }
+  ],
+  "multi_search_attempt_dynamics": {
+    "conversations_with_multiple_attempts": 48,
+    "percentage_with_multiple_attempts": 9.41,
+    "single_attempt_or_unspecified": 462,
+    "percentage_single_attempt": 90.59,
+    "denominator": 510
+  },
+  "key_takeaway": "Users primarily rely on contextual and visual clues (people, events, objects) rather than structured calendar dates. Search failures most frequently manifest as System Retrieval Breakdowns (39.61%, 202 records) when the search engine fails to match semantic or face-recognition intent, forcing users into tedious manual scrolling without actionable refinement controls."
+}

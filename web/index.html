@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Photos Feedback Discovery Engine | Product Manager Research Dashboard</title>
+  <meta name="description" content="A research discovery dashboard uncovering user photo retrieval failures, cognitive memory patterns, and product opportunities for Google Photos PMs.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Fonts: Inter & Segoe UI Variable fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Fluent 2 & Dashboard Styles -->
+  <link rel="stylesheet" href="index.css?v=18">
+</head>
+<body>
+  <!-- Top Navigation Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Google Photos Feedback Discovery Engine</h1>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (Fluent 2 Pivot) -->
+      <nav class="nav-tabs" id="main-nav-tabs" role="tablist">
+        <button class="nav-tab active" id="tab-btn-overview" role="tab" aria-selected="true" data-tab="view-overview">
+          <span class="tab-icon">📊</span>
+          <span class="tab-label">Overview</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-clusters" role="tab" aria-selected="false" data-tab="view-clusters">
+          <span class="tab-icon">🧩</span>
+          <span class="tab-label">Problem Clusters</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-questions" role="tab" aria-selected="false" data-tab="view-questions">
+          <span class="tab-icon">💡</span>
+          <span class="tab-label">Discovery Qs</span>
+        </button>
+      </nav>
+
+      <!-- Header Meta Badges -->
+      <div class="header-meta">
+        <button class="theme-toggle" id="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main class="main-content" id="main-content-region">
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: OVERVIEW ANALYTICS                                                -->
+    <!-- ========================================================================= -->
+    <section class="view-panel active" id="view-overview" role="tabpanel">
+      <!-- Dataset KPI Grid -->
+      <div class="section-heading">
+        <h2>Dataset & Ingestion Funnel</h2>
+        <span class="section-subtitle">Ingested Last 2 Years User Reviews from Apple App Store, Google Play Store, Google Help Community, YouTube Comments, Reddit & X</span>
+      </div>
+      <div class="kpi-grid" id="overview-kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Total Ingested</div>
+          <div class="kpi-value" style="color: var(--color-danger);">7358</div>
+          <div class="kpi-meta">Across 6 Public Channels</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Cleaned & Normalised</div>
+          <div class="kpi-value" style="color: var(--color-purple);">7167</div>
+          <div class="kpi-meta">191 duplicates/spam removed</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Relevant Reviews</div>
+          <div class="kpi-value" style="color: var(--color-primary);">510</div>
+          <div class="kpi-meta">Talks about photo retrieval</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Irrelevant Excluded</div>
+          <div class="kpi-value" style="color: var(--color-info);">6657</div>
+          <div class="kpi-meta">Billing, login & non-search issues</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Authentic User Voice</div>
+          <div class="kpi-value" style="color: var(--color-success);">100%</div>
+          <div class="kpi-meta">0% Synthetic Reviews</div>
+        </div>
+      </div>
+
+      <!-- Analytics Two-Column Split -->
+      <div class="analytics-row">
+        <!-- Retrieval Outcomes Card -->
+        <div class="surface-card" id="card-outcomes">
+          <div class="card-header">
+            <h3>Search Retrieval Resolution</h3>
+          </div>
+          <p class="card-desc">% of relevant reviews indicating whether photo search retrieval succeeded or failed</p>
+          <div class="outcomes-breakdown" id="outcomes-breakdown-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Failure Stages Funnel Card -->
+        <div class="surface-card" id="card-failure-stages">
+          <div class="card-header">
+            <h3>Where Does Retrieval Break Down?</h3>
+          </div>
+          <p class="card-desc">% of relevant reviews revealing critical friction points in the journey</p>
+          <div class="failure-funnel" id="failure-funnel-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary Analytics Row: Remembered Clues & Source Channels -->
+      <div class="analytics-row">
+        <!-- Top Remembered Clues -->
+        <div class="surface-card" id="card-clues-frequency">
+          <div class="card-header">
+            <h3>What Users Remember When Searching</h3>
+          </div>
+          <p class="card-desc">% of relevant reviews indicating what users remembered during search</p>
+          <div class="clues-grid" id="remembered-clues-bars">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Source Channels Breakdown -->
+        <div class="surface-card" id="card-sources-breakdown">
+          <div class="card-header">
+            <h3>Public Channel Distribution</h3>
+          </div>
+          <p class="card-desc">% of total reviews split by source</p>
+          <div class="sources-list" id="sources-breakdown-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Jump to Top Problem Clusters -->
+      <div class="section-heading">
+        <h2>Top Emergent Problem Clusters</h2>
+        <span class="section-subtitle">Ranked by volume of affected user conversations</span>
+      </div>
+      <div class="quick-clusters-grid" id="quick-clusters-grid">
+        <!-- Dynamically rendered -->
+      </div>
+
+      <!-- Key Takeaway Banner -->
+      <div class="executive-banner" id="executive-key-takeaway-banner">
+        <div class="banner-icon">💡</div>
+        <div class="banner-content">
+          <div class="banner-tag">Key Takeaway</div>
+          <p class="banner-quote" id="key-takeaway-text">
+            Users mainly search photos by time, people, and objects. Search failures most frequently manifest as system failing to find or recognize the photo. Out of 6 major problem clusters that emerge from reviews, 4 stand out, which are users struggle to find photos of individuals, system misinterpreting clues &amp; giving undesired results, users struggle with retrieval when exact dates are forgotten and users drowning in voluminous search results &amp; struggle to narrow down forcing users into tedious manual scrolling
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: PROBLEM CLUSTERS EXPLORER (USER CLUSTER ANALYSIS)                -->
+    <!-- ========================================================================= -->
+    <section class="view-panel" id="view-clusters" role="tabpanel">
+      <!-- Section Header -->
+      <div class="clusters-header-bar">
+        <div>
+          <h2>Top Emergent Problem Clusters Details</h2>
+        </div>
+      </div>
+
+      <!-- Problem Clusters Full Cards Grid -->
+      <div class="clusters-container" id="problem-clusters-container">
+        <!-- Dynamically rendered cluster cards -->
+      </div>
+
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: KEY ANALYTICAL QUESTIONS (10 FOUNDATIONAL PM QUESTIONS)           -->
+    <!-- ========================================================================= -->
+    <section class="view-panel" id="view-questions" role="tabpanel">
+      <div class="section-heading">
+        <h2>Exploring User Struggles in Photo Retrieval</h2>
+      </div>
+
+      <div class="questions-accordion" id="analytical-questions-accordion">
+        <!-- Dynamically rendered 10 analytical questions -->
+      </div>
+
+      <!-- Key Takeaway Banner -->
+      <div class="executive-banner" style="margin-top: 1rem;">
+        <div class="banner-icon">💡</div>
+        <div class="banner-content">
+          <div class="banner-tag">Key Takeaway</div>
+          <p class="banner-quote">
+            Users mainly struggle to retrieve people and old scanned photos because they remember contextual cues like people, places, activities, time of the day, life periods but not exact dates or metadata. When search fails, they simplify queries or switch to manual scrolling, and after 2–3 unsuccessful attempts especially without refinement guidance they often abandon retrieval.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: SUPPORTING CONVERSATIONS VIEWER                                     -->
+  <!-- ========================================================================= -->
+  <div class="modal-backdrop hidden" id="conversations-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="modal-cluster-tag">Problem Cluster Evidence</span>
+          <h3 class="modal-title" id="modal-cluster-title">Supporting Authentic Conversations</h3>
+          <span class="modal-count" id="modal-conversation-count">0 Conversations</span>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-search-bar">
+        <input type="text" id="modal-filter-input" placeholder="Search verbatim text, author, or source within this cluster..." aria-label="Filter conversations in modal">
+      </div>
+      <div class="modal-body" id="modal-conversations-list">
+        <!-- Dynamically populated conversation cards -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Client Data Script & Main App Logic -->
+  <script src="data.js?v=64"></script>
+  <script src="app.js?v=64"></script>
+</body>
+</html>

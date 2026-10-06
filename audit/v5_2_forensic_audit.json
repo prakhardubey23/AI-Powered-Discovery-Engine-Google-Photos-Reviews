@@ -1,0 +1,449 @@
+{
+  "metadata": {
+    "audit_title": "V5.2 Corpus Forensic Integrity and Consistency Audit",
+    "timestamp": "2026-09-26T15:47:08.938810+00:00",
+    "target_dataset": "Google Photos Discovery Engine V5.2 Expanded Dataset",
+    "status": "DIAGNOSIS_ONLY",
+    "files_modified_during_audit": 0,
+    "snapshot_backup": "archive/v5_2_pre_correction/"
+  },
+  "dataset_reconciliation": {
+    "total_raw_records": 7358,
+    "duplicates_removed": 178,
+    "spam_malformed_removed": 13,
+    "empty_records_removed": 0,
+    "total_removed": 191,
+    "total_normalized_records": 7167,
+    "total_relevant_records": 510,
+    "total_irrelevant_records": 6657,
+    "identity_check_rel_plus_irrel_equals_norm": true,
+    "relevance_rate_percentage": 7.116,
+    "source_distribution": {
+      "raw": {
+        "google_play": {
+          "count": 1553,
+          "pct": 21.11
+        },
+        "app_store": {
+          "count": 5787,
+          "pct": 78.65
+        },
+        "google_help_community": {
+          "count": 10,
+          "pct": 0.14
+        },
+        "youtube": {
+          "count": 4,
+          "pct": 0.05
+        },
+        "forums": {
+          "count": 2,
+          "pct": 0.03
+        },
+        "social": {
+          "count": 2,
+          "pct": 0.03
+        }
+      },
+      "normalized": {
+        "google_play": {
+          "count": 1450,
+          "pct": 20.23
+        },
+        "app_store": {
+          "count": 5699,
+          "pct": 79.52
+        },
+        "google_help_community": {
+          "count": 10,
+          "pct": 0.14
+        },
+        "youtube": {
+          "count": 4,
+          "pct": 0.06
+        },
+        "forums": {
+          "count": 2,
+          "pct": 0.03
+        },
+        "social": {
+          "count": 2,
+          "pct": 0.03
+        }
+      },
+      "relevant": {
+        "google_play": {
+          "count": 192,
+          "pct": 37.65
+        },
+        "app_store": {
+          "count": 300,
+          "pct": 58.82
+        },
+        "google_help_community": {
+          "count": 10,
+          "pct": 1.96
+        },
+        "youtube": {
+          "count": 4,
+          "pct": 0.78
+        },
+        "forums": {
+          "count": 2,
+          "pct": 0.39
+        },
+        "social": {
+          "count": 2,
+          "pct": 0.39
+        }
+      },
+      "irrelevant": {
+        "google_play": {
+          "count": 1258,
+          "pct": 18.9
+        },
+        "app_store": {
+          "count": 5399,
+          "pct": 81.1
+        }
+      }
+    },
+    "date_distribution": {
+      "earliest_timestamp": "2024-09-30T20:00:55+00:00",
+      "latest_timestamp": "2026-09-26T13:10:56.442069+00:00",
+      "raw_by_year": {
+        "2026": 7316,
+        "2024": 8,
+        "2025": 34
+      },
+      "normalized_by_year": {
+        "2026": 7125,
+        "2024": 8,
+        "2025": 34
+      },
+      "relevant_by_year": {
+        "2026": 499,
+        "2025": 8,
+        "2024": 3
+      }
+    },
+    "integrity_and_uniqueness": {
+      "raw_record_ids_unique": true,
+      "norm_record_ids_unique": true,
+      "rel_record_ids_unique": true,
+      "irrel_record_ids_unique": true,
+      "raw_unique_source_urls": 1578,
+      "norm_unique_source_urls": 1475,
+      "rel_unique_source_urls": 217,
+      "raw_unique_source_ids": 7358,
+      "norm_unique_source_ids": 7167,
+      "rel_unique_source_ids": 510,
+      "raw_unique_original_texts": 7209,
+      "norm_unique_original_texts": 7167,
+      "rel_unique_original_texts": 510,
+      "near_duplicate_groups_in_relevant": 4
+    }
+  },
+  "clustering_recomputation": {
+    "total_relevant_corpus": 510,
+    "total_clustered_records": 487,
+    "total_unclustered_records": 23,
+    "identity_check_clustered_plus_unclustered_equals_relevant": true,
+    "clusters": [
+      {
+        "cluster_id": "face_grouping_people_identification_breakdown",
+        "cluster_name": "Face Grouping & People Identification Failure",
+        "member_count": 130,
+        "stated_conversation_count": 130,
+        "cluster_percentage": 25.49,
+        "recomputed_percentage": 25.49
+      },
+      {
+        "cluster_id": "semantic_ai_natural_language_query_mismatch",
+        "cluster_name": "Natural Language & AI Query Semantic Mismatch",
+        "member_count": 121,
+        "stated_conversation_count": 121,
+        "cluster_percentage": 23.73,
+        "recomputed_percentage": 23.73
+      },
+      {
+        "cluster_id": "temporal_chronological_discovery_gap",
+        "cluster_name": "Temporal & Date-Based Navigation Breakdown",
+        "member_count": 119,
+        "stated_conversation_count": 119,
+        "cluster_percentage": 23.33,
+        "recomputed_percentage": 23.33
+      },
+      {
+        "cluster_id": "visual_attribute_object_detail_retrieval_friction",
+        "cluster_name": "Visual Attributes & Object-Specific Retrieval Friction",
+        "member_count": 55,
+        "stated_conversation_count": 55,
+        "cluster_percentage": 10.78,
+        "recomputed_percentage": 10.78
+      },
+      {
+        "cluster_id": "result_overload_and_refinement_exhaustion",
+        "cluster_name": "Result Overload & Refinement Exhaustion",
+        "member_count": 33,
+        "stated_conversation_count": 33,
+        "cluster_percentage": 6.47,
+        "recomputed_percentage": 6.47
+      },
+      {
+        "cluster_id": "text_document_screenshot_ocr_breakdown",
+        "cluster_name": "Text, Document & Screenshot OCR Search Breakdown",
+        "member_count": 29,
+        "stated_conversation_count": 29,
+        "cluster_percentage": 5.69,
+        "recomputed_percentage": 5.69
+      }
+    ],
+    "unclustered": {
+      "count": 23,
+      "percentage": 4.51
+    }
+  },
+  "failure_stages_recomputation": {
+    "total_relevant_records": 510,
+    "stages": [
+      {
+        "stage": "Not Indicative",
+        "count": 249,
+        "recomputed_percentage": 48.82
+      },
+      {
+        "stage": "2. System Retrieval Failure",
+        "count": 202,
+        "recomputed_percentage": 39.61
+      },
+      {
+        "stage": "3. Result Overload / Distinction",
+        "count": 29,
+        "recomputed_percentage": 5.69
+      },
+      {
+        "stage": "4. Refinement Breakdown",
+        "count": 22,
+        "recomputed_percentage": 4.31
+      },
+      {
+        "stage": "Unspecified / Missing",
+        "count": 4,
+        "recomputed_percentage": 0.78
+      },
+      {
+        "stage": "1. Translation Struggle",
+        "count": 4,
+        "recomputed_percentage": 0.78
+      }
+    ]
+  },
+  "retrieval_outcomes_recomputation": {
+    "total_relevant_records": 510,
+    "outcomes": [
+      {
+        "outcome": "Failure",
+        "count": 229,
+        "recomputed_percentage": 44.9
+      },
+      {
+        "outcome": "Success",
+        "count": 209,
+        "recomputed_percentage": 40.98
+      },
+      {
+        "outcome": "Unknown",
+        "count": 42,
+        "recomputed_percentage": 8.24
+      },
+      {
+        "outcome": "Partial Success",
+        "count": 30,
+        "recomputed_percentage": 5.88
+      }
+    ]
+  },
+  "memory_clues_recomputation": {
+    "total_clue_spans": 686,
+    "denominator_relevant_conversations": 510,
+    "clues_per_conversation_average": 1.35,
+    "dimensions": [
+      {
+        "dimension": "Time",
+        "total_extracted_spans": 134,
+        "conversations_containing_dimension": 132,
+        "percentage_of_relevant_conversations": 25.88
+      },
+      {
+        "dimension": "People",
+        "total_extracted_spans": 124,
+        "conversations_containing_dimension": 122,
+        "percentage_of_relevant_conversations": 23.92
+      },
+      {
+        "dimension": "Objects",
+        "total_extracted_spans": 123,
+        "conversations_containing_dimension": 115,
+        "percentage_of_relevant_conversations": 22.55
+      },
+      {
+        "dimension": "Location",
+        "total_extracted_spans": 59,
+        "conversations_containing_dimension": 59,
+        "percentage_of_relevant_conversations": 11.57
+      },
+      {
+        "dimension": "Context",
+        "total_extracted_spans": 58,
+        "conversations_containing_dimension": 55,
+        "percentage_of_relevant_conversations": 10.78
+      },
+      {
+        "dimension": "Activity",
+        "total_extracted_spans": 62,
+        "conversations_containing_dimension": 55,
+        "percentage_of_relevant_conversations": 10.78
+      },
+      {
+        "dimension": "Visuals",
+        "total_extracted_spans": 48,
+        "conversations_containing_dimension": 47,
+        "percentage_of_relevant_conversations": 9.22
+      },
+      {
+        "dimension": "Event",
+        "total_extracted_spans": 47,
+        "conversations_containing_dimension": 47,
+        "percentage_of_relevant_conversations": 9.22
+      },
+      {
+        "dimension": "Text_ocr",
+        "total_extracted_spans": 31,
+        "conversations_containing_dimension": 29,
+        "percentage_of_relevant_conversations": 5.69
+      }
+    ]
+  },
+  "multi_search_journeys_recomputation": {
+    "total_relevant_records": 510,
+    "multiple_retrieval_attempts": {
+      "count": 48,
+      "percentage": 9.41
+    },
+    "single_retrieval_attempt": {
+      "count": 121,
+      "percentage": 23.73
+    },
+    "unspecified_attempts": {
+      "count": 341,
+      "percentage": 66.86
+    },
+    "explicit_reformulation_tactics_evidenced": {
+      "count": 38,
+      "percentage": 7.45
+    }
+  },
+  "stale_values_and_discrepancies": {
+    "stale_hardcoded_values_found": [
+      {
+        "pattern": "N=86 / 86 records",
+        "locations": [
+          "data/06_quantification/quantification_metrics.json (28 places in denominator_definition)",
+          "src/quantification/metric_calculator.py (Lines 84, 125, 150, 197)",
+          "web/index.html (Line 109: 'Denominator: N = 86 Verified Relevant Records')",
+          "web/data.js (Inherited from metrics.json)",
+          "phases-implementation-log.md (16 places)",
+          "src/run_phase3.py (Line 116)"
+        ],
+        "classification": "stale current-output value that must be corrected",
+        "diagnosis": "Stale string literal left from V5 N=86 run despite denominator integer correctly being 510."
+      },
+      {
+        "pattern": "69.8% / 69.77% (System Retrieval Breakdowns)",
+        "locations": [
+          "data/06_quantification/quantification_metrics.json (Line 244 key_takeaway)",
+          "src/quantification/metric_calculator.py (Line 244 key_takeaway)",
+          "src/web/build_dashboard_bundle.py (Lines 86, 89, 101 in ANALYTICAL_QUESTIONS)",
+          "web/data.js (Inherited ANALYTICAL_QUESTIONS_DATA)",
+          "web/index.html (Line 89)",
+          "phases-implementation-log.md (Lines 131, 208)",
+          "src/run_phase3.py (Line 97)"
+        ],
+        "classification": "stale current-output value that must be corrected",
+        "diagnosis": "69.8% was the V5 baseline failure percentage (60/86). In V5.2, Stage 2 System Retrieval Failure is 202/510 (39.61%)."
+      },
+      {
+        "pattern": "55.8% / 55.81% (Retrieval Failure Rate)",
+        "locations": [
+          "src/web/build_dashboard_bundle.py (Line 236)",
+          "web/data.js (Inherited in Q10)",
+          "phases-implementation-log.md (Line 130)",
+          "src/run_phase3.py (Line 96)"
+        ],
+        "classification": "stale current-output value that must be corrected",
+        "diagnosis": "55.81% was V5 failure rate (48/86). In V5.2, failure outcome is 229/510 (44.90%)."
+      },
+      {
+        "pattern": "757 / 688 / 602 (Old Pipeline Counts)",
+        "locations": [
+          "web/index.html (Line 148: '757 Ingested Public Records')",
+          "phases-implementation-log.md (Lines 171, 205, 207, 208, 221)",
+          "src/run_phase4.py (Line 56)",
+          "src/run_phase5.py (Lines 43, 45, 46, 59)"
+        ],
+        "classification": "stale current-output value that must be corrected",
+        "diagnosis": "V5 pipeline counts (757 raw, 688 normalized, 602 irrelevant) baked into templates instead of V5.2 counts (7,358 raw, 7,167 normalized, 6,657 irrelevant)."
+      },
+      {
+        "pattern": "282 clues (3.28 / conv)",
+        "locations": [
+          "v5 and v5.2 results log.md (Line 15)",
+          "src/run_phase2.py (Line 83)",
+          "src/extraction/build_phase2_artifacts.py (Line 423)"
+        ],
+        "classification": "historical/log-only value in comparative logs, valid comparison",
+        "diagnosis": "Represents the historical V5 baseline clue count for comparison against V5.2 (686 clues)."
+      },
+      {
+        "pattern": "Hardcoded V5 Questions in build_dashboard_bundle.py",
+        "locations": [
+          "src/web/build_dashboard_bundle.py (Lines 14-241)",
+          "web/data.js (ANALYTICAL_QUESTIONS_DATA)"
+        ],
+        "classification": "stale current-output value that must be corrected",
+        "diagnosis": "The entire 10-question findings array contains hardcoded N=86 percentages rather than dynamically reflecting V5.2 510-record corpus."
+      },
+      {
+        "pattern": "Multi-Search Attempts Counting Logic Discrepancy",
+        "locations": [
+          "src/quantification/metric_calculator.py (Line 214)",
+          "data/06_quantification/quantification_metrics.json (multi_search_attempt_dynamics)"
+        ],
+        "classification": "stale current-output value that must be corrected",
+        "diagnosis": "Expression t != 'none' counted 23 records with reformulation_tactics: ['unspecified'] as multiple attempts, inflating multi-attempt count from 48 (9.41%) to 71 (13.92%)."
+      },
+      {
+        "pattern": "4 Records with Empty Failure Breakdown in Extraction Artifacts",
+        "locations": [
+          "data/04_extraction/failure_stages.json",
+          "data/04_extraction/consolidated_extractions.json"
+        ],
+        "classification": "stale current-output value that must be corrected",
+        "diagnosis": "Record IDs [74d43522-c941-58cd-8ec4-a26d4a7f5ae1, c3eed9a4-f277-5e7c-8f88-33b440a4a225, 5d982702-2a85-5440-8335-6245a798fe73, 4c034c8f-226f-5ae1-ad19-d73035acbd38] contain empty dict as failure_breakdown."
+      }
+    ]
+  },
+  "files_requiring_correction": [
+    "data/06_quantification/quantification_metrics.json",
+    "src/quantification/metric_calculator.py",
+    "src/web/build_dashboard_bundle.py",
+    "web/data.js",
+    "web/index.html",
+    "src/run_phase3.py",
+    "src/run_phase4.py",
+    "src/run_phase5.py",
+    "phases-implementation-log.md",
+    "v5 and v5.2 results log.md"
+  ]
+}

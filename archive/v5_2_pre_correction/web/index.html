@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Photos Discovery Engine | Product Manager Research Dashboard</title>
+  <meta name="description" content="A research discovery dashboard uncovering user photo retrieval failures, cognitive memory patterns, and product opportunities for Google Photos PMs.">
+  
+  <!-- Fonts: Inter & Segoe UI Variable fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Fluent 2 & Dashboard Styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Top Navigation Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 7H13V13H11V7ZM12 17.25C11.31 17.25 10.75 16.69 10.75 16C10.75 15.31 11.31 14.75 12 14.75C12.69 14.75 13.25 15.31 13.25 16C13.25 16.69 12.69 17.25 12 17.25Z" fill="url(#brand-grad)"/>
+            <defs>
+              <linearGradient id="brand-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4285F4"/>
+                <stop offset="0.33" stop-color="#EA4335"/>
+                <stop offset="0.66" stop-color="#FBBC05"/>
+                <stop offset="1" stop-color="#34A853"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Google Photos Discovery Engine</h1>
+          <span class="brand-subtitle">Qualitative Retrieval Breakdown & Opportunity Platform</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (Fluent 2 Pivot) -->
+      <nav class="nav-tabs" id="main-nav-tabs" role="tablist">
+        <button class="nav-tab active" id="tab-btn-overview" role="tab" aria-selected="true" data-tab="view-overview">
+          <span class="tab-icon">📊</span>
+          <span class="tab-label">1. Overview Analytics</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-clusters" role="tab" aria-selected="false" data-tab="view-clusters">
+          <span class="tab-icon">🧩</span>
+          <span class="tab-label">2. Problem Clusters</span>
+          <span class="badge-count" id="badge-clusters-count">6</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-questions" role="tab" aria-selected="false" data-tab="view-questions">
+          <span class="tab-icon">💡</span>
+          <span class="tab-label">3. 10 Analytical Qs</span>
+        </button>
+        <button class="nav-tab" id="tab-btn-opportunities" role="tab" aria-selected="false" data-tab="view-opportunities">
+          <span class="tab-icon">🚀</span>
+          <span class="tab-label">4. Opportunities</span>
+          <span class="badge-count highlight" id="badge-opps-count">6</span>
+        </button>
+      </nav>
+
+      <!-- Header Meta Badges -->
+      <div class="header-meta">
+        <div class="meta-pill" title="100% Authentic User Discussions (0% Synthetic)">
+          <span class="pill-dot live"></span>
+          <span>Authentic 2-Year Corpus</span>
+        </div>
+        <button class="theme-toggle" id="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main class="main-content" id="main-content-region">
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: OVERVIEW ANALYTICS                                                -->
+    <!-- ========================================================================= -->
+    <section class="view-panel active" id="view-overview" role="tabpanel">
+      <!-- AI Executive Key Takeaway Banner -->
+      <div class="executive-banner" id="executive-key-takeaway-banner">
+        <div class="banner-icon">💡</div>
+        <div class="banner-content">
+          <div class="banner-tag">CORE QUALITATIVE TAKEAWAY FOR PRODUCT MANAGERS</div>
+          <p class="banner-quote" id="key-takeaway-text">
+            Users primarily rely on contextual and visual clues (people, events, objects) rather than structured calendar dates. Search failures most frequently manifest as System Retrieval Breakdowns (69.8%) when the search engine fails to match semantic or face-recognition intent, forcing users into tedious manual scrolling without actionable refinement controls.
+          </p>
+        </div>
+      </div>
+
+      <!-- Dataset KPI Grid -->
+      <div class="section-heading">
+        <h2>Dataset & Ingestion Funnel</h2>
+        <span class="section-subtitle">Comprehensive metrics across 7 verified public discovery channels</span>
+      </div>
+      <div class="kpi-grid" id="overview-kpi-grid">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+
+      <!-- Analytics Two-Column Split -->
+      <div class="analytics-row">
+        <!-- Retrieval Outcomes Card -->
+        <div class="surface-card" id="card-outcomes">
+          <div class="card-header">
+            <h3>Search Retrieval Resolution</h3>
+            <span class="card-meta">Denominator: N = 86 Verified Relevant Records</span>
+          </div>
+          <p class="card-desc">Conclusive outcome of user retrieval attempts. Returning search results is strictly distinguished from finding the intended photo.</p>
+          <div class="outcomes-breakdown" id="outcomes-breakdown-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Failure Stages Funnel Card -->
+        <div class="surface-card" id="card-failure-stages">
+          <div class="card-header">
+            <h3>Where Does Retrieval Break Down?</h3>
+            <span class="card-meta">4-Stage Cognitive & System Funnel</span>
+          </div>
+          <p class="card-desc">Pinpointing the exact journey stage where users experience critical friction.</p>
+          <div class="failure-funnel" id="failure-funnel-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary Analytics Row: Remembered Clues & Source Channels -->
+      <div class="analytics-row">
+        <!-- Top Remembered Clues -->
+        <div class="surface-card" id="card-clues-frequency">
+          <div class="card-header">
+            <h3>What Users Remember When Searching</h3>
+            <span class="card-meta">Frequency across Verified Conversations</span>
+          </div>
+          <p class="card-desc">Cognitive memory dimensions users naturally draw upon during search formulation.</p>
+          <div class="clues-grid" id="remembered-clues-bars">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Source Channels Breakdown -->
+        <div class="surface-card" id="card-sources-breakdown">
+          <div class="card-header">
+            <h3>Public Channel Distribution</h3>
+            <span class="card-meta">757 Ingested Public Records</span>
+          </div>
+          <p class="card-desc">Multi-channel cross-sampling ensuring representative real-world voice.</p>
+          <div class="sources-list" id="sources-breakdown-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Jump to Top Problem Clusters -->
+      <div class="section-heading">
+        <h2>Top Emergent Problem Clusters</h2>
+        <span class="section-subtitle">Ranked by volume of affected user conversations</span>
+      </div>
+      <div class="quick-clusters-grid" id="quick-clusters-grid">
+        <!-- Dynamically rendered -->
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: PROBLEM CLUSTERS EXPLORER (USER CLUSTER ANALYSIS)                -->
+    <!-- ========================================================================= -->
+    <section class="view-panel" id="view-clusters" role="tabpanel">
+      <!-- Section Header with Search & Filter Bar -->
+      <div class="clusters-header-bar">
+        <div>
+          <h2>Emergent Problem Clusters Explorer</h2>
+          <span class="section-subtitle">In-depth qualitative profiles with Tri-State memory gaps and authentic user quotes</span>
+        </div>
+        <div class="clusters-filter-group">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="cluster-search-input" placeholder="Search clusters, clues, keywords..." aria-label="Search Problem Clusters">
+          </div>
+          <div class="filter-pills" id="cluster-filter-pills">
+            <button class="filter-pill active" data-filter="all">All Clusters (6)</button>
+            <button class="filter-pill" data-filter="people">Faces & People</button>
+            <button class="filter-pill" data-filter="visual">Visual & Objects</button>
+            <button class="filter-pill" data-filter="time">Time & Dates</button>
+            <button class="filter-pill" data-filter="ai">AI / Ask Photos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Clusters Full Cards Grid -->
+      <div class="clusters-container" id="problem-clusters-container">
+        <!-- Dynamically rendered cluster cards -->
+      </div>
+
+      <!-- Unclustered Records Notice (Anti-Force-Fitting) -->
+      <div class="unclustered-notice" id="unclustered-records-notice">
+        <div class="notice-icon">🛡️</div>
+        <div class="notice-body">
+          <h4>Research Integrity: Preserved Unclustered Records (3 conversations)</h4>
+          <p>To adhere to strict anti-force-fitting rules, 3 authentic retrieval records with outlier or sparse journey detail were preserved in <code>data/05_clustering/unclustered_records.json</code> rather than force-fit into preconceived categories.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: KEY ANALYTICAL QUESTIONS (10 FOUNDATIONAL PM QUESTIONS)           -->
+    <!-- ========================================================================= -->
+    <section class="view-panel" id="view-questions" role="tabpanel">
+      <div class="section-heading">
+        <h2>10 Foundational Product Management Questions</h2>
+        <span class="section-subtitle">Data-backed qualitative and quantitative synthesis answering the core discovery brief</span>
+      </div>
+
+      <div class="questions-accordion" id="analytical-questions-accordion">
+        <!-- Dynamically rendered 10 analytical questions -->
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 4: OPPORTUNITY HYPOTHESES                                            -->
+    <!-- ========================================================================= -->
+    <section class="view-panel" id="view-opportunities" role="tabpanel">
+      <div class="opportunities-header-bar">
+        <div>
+          <h2>Product Opportunity Hypotheses</h2>
+          <span class="section-subtitle">Evidence-backed problem spaces and qualitative user research interview questions</span>
+        </div>
+        <div class="compliance-badge" title="Non-prescriptive research framework">
+          <span>🛡️ Anti-Prescription Guardrail: Zero Premature Feature Mandates</span>
+        </div>
+      </div>
+
+      <!-- Opportunity Cards Grid -->
+      <div class="opportunities-grid" id="opportunity-cards-container">
+        <!-- Dynamically rendered opportunity cards -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL: SUPPORTING CONVERSATIONS VIEWER                                     -->
+  <!-- ========================================================================= -->
+  <div class="modal-backdrop hidden" id="conversations-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="modal-cluster-tag">Problem Cluster Evidence</span>
+          <h3 class="modal-title" id="modal-cluster-title">Supporting Authentic Conversations</h3>
+          <span class="modal-count" id="modal-conversation-count">0 Conversations</span>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-search-bar">
+        <input type="text" id="modal-filter-input" placeholder="Search verbatim text, author, or source within this cluster..." aria-label="Filter conversations in modal">
+      </div>
+      <div class="modal-body" id="modal-conversations-list">
+        <!-- Dynamically populated conversation cards -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Client Data Script & Main App Logic -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

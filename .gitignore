@@ -1,0 +1,16 @@
+# Environment variables & secrets
+.env
+
+# Personal research notes requested to exclude
+v5 and v5.2 results log.md
+phase-wise-implementation-summary-v5.2.md
+
+# Cache & SQLite files
+data/.llm_cache.sqlite
+__pycache__/
+*.pyc
+
+# OS & IDE files
+.DS_Store
+.vscode/
+.idea/
