@@ -72,49 +72,9 @@ def load_standalone_html():
         html_content
     )
 
-    # Inject Streamlit iframe auto-resizer script to eliminate double scrollbars
-    resizer_script = """
-    <script>
-      function autoResizeStreamlit() {
-        try {
-          const body = document.body;
-          const html = document.documentElement;
-          const h = Math.max(
-            body.scrollHeight, body.offsetHeight,
-            html.clientHeight, html.scrollHeight, html.offsetHeight
-          );
-          window.parent.postMessage({
-            type: "streamlit:setFrameHeight",
-            height: h + 40
-          }, "*");
-        } catch(e) {}
-      }
-
-      window.addEventListener("load", autoResizeStreamlit);
-      window.addEventListener("resize", autoResizeStreamlit);
-      document.addEventListener("DOMContentLoaded", autoResizeStreamlit);
-
-      const observer = new MutationObserver(function() {
-        autoResizeStreamlit();
-        setTimeout(autoResizeStreamlit, 150);
-      });
-
-      document.addEventListener("DOMContentLoaded", function() {
-        observer.observe(document.body, { subtree: true, childList: true, attributes: true });
-      });
-
-      document.addEventListener("click", function() {
-        setTimeout(autoResizeStreamlit, 50);
-        setTimeout(autoResizeStreamlit, 250);
-      });
-    </script>
-    </body>
-    """
-    html_content = html_content.replace("</body>", resizer_script)
-
     return html_content
 
 standalone_html = load_standalone_html()
 
-# Render component with scrolling=False to remove the inner iframe scrollbar
-components.html(standalone_html, height=1200, scrolling=False)
+# Render component cleanly
+components.html(standalone_html, height=2800, scrolling=True)
